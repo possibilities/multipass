@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "fork": "possibilities/codex-multi-auth",
+  "upstream": "ndycode/codex-multi-auth",
+  "checkout": "fork/",
+  "worktrees": "worktrees/",
+  "integrationCommit": "d303e37c51b88c7e98033b39499431745557f70a",
+  "publishedIntegrationCommit": "7712608351782f9772aea1d4d0e52b1334e25707",
+  "upstreamCommit": "3fce0cb0e819d947266011a5f235ade53631f13c",
+  "capturedAt": "2026-09-01T17:26:28Z"
+}
