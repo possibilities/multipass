@@ -80,6 +80,25 @@ Nine `fix/*` branches remain in the checkout from landed or closed offers. They
 carry nothing Integration needs and are retired once their inventory entry is
 confirmed landed.
 
+## Gate
+
+Run verbatim from the candidate worktree:
+
+```sh
+npm ci
+npm run lint
+npm run typecheck
+npm test
+```
+
+`npm test` is `vitest run --maxWorkers=1`; the single worker is upstream's own
+choice and is not relaxed here. No external proof is required: upstream runs no
+hosted CI we depend on, and the fork publishes no binary.
+
+**DECISION — unproven.** These are upstream's declared scripts, read from
+`package.json`, but this gate has not yet been executed end to end. The first
+cycle must run it and record the result in `SCRATCHPAD.md`.
+
 ## Consumer
 
 **DECISION — there is no consumer today.** `codex-swap` binds upstream's npm
